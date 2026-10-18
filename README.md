@@ -2,6 +2,8 @@
 
 Tuned Fourier Neural Operator (FNO) baselines for [The Well](https://github.com/PolymathicAI/the_well). Each of 17 datasets gets its own FNO configuration, with Tucker-factorized spectral weights and a 12-hour training budget, to give stronger FNO baselines than those originally reported with The Well. Trained checkpoints for every dataset are released on Hugging Face.
 
+These baselines show that the FNO and TFNO results published with The Well were illustrative, lightly tuned examples, not architectural benchmarks. A short hyperparameter search under the same 12-hour limit, using a single input timestep instead of up to four, lowers VRMSE below both published baselines on 15 of 17 tasks, sometimes by orders of magnitude. The configurations here are not claimed to be optimal; they show how sensitive the published numbers are to modest tuning.
+
 ## Install
 
 Python 3.10 to 3.12
